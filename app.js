@@ -97,3 +97,33 @@ divideButton.addEventListener('click', () => {
     //update text of span
     divideSpan.textContent = quotient;
 })
+
+
+//log number of times button pressed
+//get counter input
+const userCounter = document.getElementById('counter');
+
+//set counter to 0
+let i = 0;
+
+//listen for button clicks
+addButton.addEventListener('click', () => {
+    //change text
+    document.getElementById('counter').textContent = i++;
+
+})
+
+subtractButton.addEventListener('click', () => {
+    document.getElementById('counter').textContent = i++;
+
+})
+
+multiplyButton.addEventListener('click', () => {
+    document.getElementById('counter').textContent = i++;
+
+})
+
+divideButton.addEventListener('click', () => {
+    document.getElementById('counter').textContent = i++;
+
+})
