@@ -1,3 +1,5 @@
+import { add } from './utilities.js';
+
 // get dom elements
 // get add-input-1
 const addInput1 = document.getElementById('add-input-1');
@@ -20,7 +22,7 @@ addButton.addEventListener('click', () => {
     const value2 = addInput2.value;
 
     // add the two values together
-    const sum = Number(value1) + Number(value2);
+    const sum = add(value1, value2);
 
     // update the textContent of the span
     addSpan.textContent = sum;
@@ -45,7 +47,7 @@ subtractButton.addEventListener('click', () => {
     const value1 = subtractInput1.value;
     const value2 = subtractInput2.value;
     /*subtract input values & convert to numbers*/
-    const difference = Number(value1) - Number(value2);
+    const difference = sub(value1, value2);
     //update text of span
     subtractSpan.textContent = difference;
 })
@@ -69,7 +71,7 @@ multiplyButton.addEventListener('click', () => {
     const value1 = multiplyInput1.value;
     const value2 = multiplyInput2.value;
     /*multiply input values & convert to numbers*/
-    const product = Number(value1) * Number(value2);
+    const product = mul(value1, value2);
     //update text of span
     multiplySpan.textContent = product;
 })
@@ -93,7 +95,7 @@ divideButton.addEventListener('click', () => {
     const value1 = divideInput1.value;
     const value2 = divideInput2.value;
     /*divide input values & convert to numbers*/
-    const quotient = Number(value1) / Number(value2);
+    const quotient = div(value1, value2);
     //update text of span
     divideSpan.textContent = quotient;
 })
